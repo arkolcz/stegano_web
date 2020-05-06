@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stegano!</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Steganography web app">
+    <meta name="keywords" content="steganography, stegano, encryption, howto">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+
+</head>
+<body>
+    <header class="header-section">
+        <h1>Steganography</h1>
+        <h2>Encrypt a message within image</h2>
+    </header>
+    <form method=post enctype=multipart/form-data>
+        <input type='file' class='file-input' name='image' id='image'>
+        <input type="text">
+        <button type="submit" class="btn">Encrypt</button>
+    </form>
+    <footer class="footer-section">
+        <p>
+            Copyright. Arkadiusz Olczak.
+        </p>
+    </footer>
+        <script type="text/javascript" src="../static/script.js"></script>
+</body>
+</html>
