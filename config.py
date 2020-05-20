@@ -8,12 +8,15 @@ class Config:
     SECRET_KEY = environ.get('SECRET_KEY')
     if not SECRET_KEY:
         raise ValueError("No SECRET_KEY set for Flask application")
+
     SESSION_COOKIE_NAME = environ.get('SESSION_COOKIE_NAME')
     if not SESSION_COOKIE_NAME:
         raise ValueError("No SESSION_COOKIE_NAME set for Flask application")
+
     STATIC_FOLDER = environ.get('STATIC_FOLDER')
     if not STATIC_FOLDER:
         raise ValueError("No STATIC_FOLDER set for Flask application")
+    
     TEMPLATES_FOLDER = environ.get('TEMPLATES_FOLDER')
     if not TEMPLATES_FOLDER:
         raise ValueError("No TEMPLATES_FOLDER set for Flask application")
