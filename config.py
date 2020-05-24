@@ -16,6 +16,10 @@ class Config:
     STATIC_FOLDER = environ.get('STATIC_FOLDER')
     if not STATIC_FOLDER:
         raise ValueError("No STATIC_FOLDER set for Flask application")
+
+    UPLOAD_FOLDER = environ.get('UPLOAD_FOLDER')
+    if not UPLOAD_FOLDER:
+        raise ValueError("No UPLOAD_FOLDER set for Flask application")   
     
     TEMPLATES_FOLDER = environ.get('TEMPLATES_FOLDER')
     if not TEMPLATES_FOLDER:
